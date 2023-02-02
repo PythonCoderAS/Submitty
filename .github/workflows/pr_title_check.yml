@@ -10,6 +10,7 @@ on:
 jobs:
   title-check:
     runs-on: ubuntu-latest
+    if: ${{ github.actor == 'dependabot[bot]' }}
     steps:
       #
       # pull request titles format rules here:
